@@ -1,0 +1,77 @@
+/***************
+    RESET
+***************/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+footer,
+header,
+nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+footer,
+header,
+menu,
+nav {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+/***************
+    CSS
+***************/
+
+body {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.container {
+  border: solid 1px black;
+  height: 514px;
+  width: 514px;
+  border-collapse: collapse;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.box {
+  border: solid 1px black;
+  height: 32px;
+  width: 32px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
