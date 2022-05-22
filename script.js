@@ -31,9 +31,11 @@ function clearGrid() {
 function colorBox(e) {
   const box = e.target;
   if (box.dataset.colored === "true") {
+    box.style.backgroundColor = tintColor(box);
     return;
   }
   box.style.backgroundColor = randomColor();
+  box.style.opacity = 1;
   box.dataset.colored = "true";
 }
 
@@ -46,6 +48,14 @@ function randomColor() {
 
 function randomDecimal() {
   return Math.floor(Math.random() * 255);
+}
+
+function tintColor(target) {
+  if (+target.style.opacity === 0) {
+    return;
+  }
+  const opacityNumber = +target.style.opacity;
+  target.style.opacity = (opacityNumber - 0.1).toString();
 }
 
 function promptUserForSize() {
